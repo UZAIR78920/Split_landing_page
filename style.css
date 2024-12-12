@@ -75,7 +75,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url("https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80")
+  background: url("https://images.unsplash.com/photo-1607356296477-5454f7a7f0f0?q%3D80%26w%3D1974%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
     no-repeat center / cover;
 }
 
@@ -132,5 +132,122 @@ h1 {
   .btn {
     padding: 1.2rem;
     width: 12rem;
+  }
+}
+/CSS for team.html/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body .team{
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d4d0ff;
+  color: #333;
+}
+
+h1 .team{
+  position: fixed;
+  top: 20px;  /* Position the title 20px from the top of the screen */
+  left: 50%;  /* Align it to the center horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+  font-size: 3rem;
+  color: #333;
+  z-index: 100; /* Ensure it's on top of other elements */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 30px;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#about {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+#team {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  background-color: #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  flex-basis: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    flex-basis: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .team-member {
+    flex-basis: 90%;
   }
 }
